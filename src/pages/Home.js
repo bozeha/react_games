@@ -185,6 +185,9 @@ const Games = styled(motion.div)`
   //// in this case minmax -> first value is the minimum size and max is the max site
 
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 
   align-items: center;
 
