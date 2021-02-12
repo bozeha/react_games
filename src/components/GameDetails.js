@@ -193,6 +193,12 @@ const TopDetails = styled(motion.div)`
       width: 20px;
     }
   }
+  @media only screen and (max-width: 500px) {
+    .main_details .stars img,
+    .platforms img {
+      width: 10px;
+    }
+  }
 `;
 
 export default GameDetails;
