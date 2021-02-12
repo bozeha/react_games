@@ -45,3 +45,9 @@ export const loadGameFromSearch = (name) => async (dispatch) => {
     },
   });
 };
+
+export const clearSearchResults = (dispatch) => {
+  dispatch({
+    type: "CLEAR",
+  });
+};

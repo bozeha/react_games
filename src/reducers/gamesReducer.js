@@ -28,6 +28,11 @@ const gamesReducer = (state = initialState, action) => {
         ...state,
         search: action.payload.search,
       };
+    case "CLEAR":
+      return {
+        ...state,
+        search: [],
+      };
     default:
       return { ...state };
   }
