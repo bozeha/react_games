@@ -225,6 +225,7 @@ const Loader = styled.div`
   height: 100vh;
   position: fixed;
   img {
+    width: 70%;
     margin: 0 auto;
     display: block;
   }

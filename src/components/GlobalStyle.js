@@ -36,7 +36,11 @@ a{
     text-decoration:none;
     color:black;
 }
-
+@media only screen and (max-width: 500px) {
+    h2{
+        font-size:2rem;
+    }
+}
 `;
 
 export default GlobalStyle;

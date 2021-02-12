@@ -179,6 +179,20 @@ const TopDetails = styled(motion.div)`
       width: 20px;
     }
   }
+  @media only screen and (max-width: 500px) {
+    h2 {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 0.7rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+    .platforms img {
+      width: 10px;
+    }
+  }
 `;
 
 export default GameDetails;
