@@ -85,11 +85,6 @@ const GameDetails = (id) => {
                 <h2>{game.name}</h2>
                 <h3>{`Rating: ${game.rating}`}</h3>
                 <div className="stars">{getStars(game.rating)}</div>
-                <motion.img
-                  layoutId={game.background_image}
-                  src={game.background_image}
-                />
-                <p>{`Disc: ${game.description_raw}`}</p>
               </div>
               <div>
                 <h2>Platforms:</h2>
@@ -101,6 +96,11 @@ const GameDetails = (id) => {
                 </div>
               </div>
             </TopDetails>
+            <motion.img
+              layoutId={game.background_image}
+              src={game.background_image}
+            />
+            <p>{`Disc: ${game.description_raw}`}</p>
 
             <div className="screens">
               {screen.results &&
@@ -157,6 +157,20 @@ const WhiteDetailsBlock = styled.div`
   img {
     width: 100%;
   }
+  @media only screen and (max-width: 500px) {
+    h2 {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 0.7rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+    .platforms img {
+      width: 10px;
+    }
+  }
 `;
 
 const TopDetails = styled(motion.div)`
@@ -177,20 +191,6 @@ const TopDetails = styled(motion.div)`
   .platforms {
     img {
       width: 20px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    h2 {
-      font-size: 1rem;
-    }
-    h3 {
-      font-size: 0.7rem;
-    }
-    p {
-      font-size: 0.5rem;
-    }
-    .platforms img {
-      width: 10px;
     }
   }
 `;
